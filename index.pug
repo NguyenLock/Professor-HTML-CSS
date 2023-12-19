@@ -1,0 +1,40 @@
+include ./pug/mixins.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title HTML CSS MASTER
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin) 
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="./index.css")
+        link(rel="stylesheet", href="./style/popular.css")
+    body 
+    section.top-tour 
+        .container
+            h2.Heading Top Country 
+            .tour-list 
+                +tourItem("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "From 40$", "VietNam the Beautiful Country Everything is Cheap", 5.0, 20, "24 Hours", 40)
+                +tourItem("https://images.unsplash.com/photo-1682685797741-f0213d24418c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "From 60$", "ThaiLand the Country Most Cheap Food", 4.4, 10, "10 Hours",60 )
+                +tourItem("https://plus.unsplash.com/premium_photo-1701202020992-8435d66fb91d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "From 30$", "Beautiful Of Moutouins,Make your Photo Beautiful ", 4.8, 5, "12 Hours",30 )
+    section.popular 
+        .container
+            h2.Heading Popular Thinks to do in BangKok
+            .popular-list 
+                +popularItem()
+                +popularItem()
+                +popularItem()
+                +popularItem()
+                +popularItem()
+                +popularItem()
+    section.gem
+        .container
+            h2.Heading Hidden gems in Bangkok  
+            .gem-list 
+            each val in [1,2,3,4,5]
+                .gem-item 
+                    img(src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt="random-png")
+                        
