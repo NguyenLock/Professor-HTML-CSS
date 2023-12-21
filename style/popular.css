@@ -5,9 +5,8 @@
 }
 body {
   font-family: var(--primary-font-sans);
-  font-weight: 500;
-  background-color: #f5f5f5;
-  padding: 40px 24px;
+  font-weight: 400;
+  background-color: white;
 }
 :root{
   --black-color: #141416;
@@ -161,4 +160,3 @@ body {
     --columns: 1;
   }
 }
-
