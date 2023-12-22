@@ -3,11 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: var(--primary-font-sans);
-  font-weight: 400;
-  background-color: white;
-}
+
 :root{
   --black-color: #141416;
   --gray6:#F4F5F6;
