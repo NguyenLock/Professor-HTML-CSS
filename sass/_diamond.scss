@@ -1,0 +1,81 @@
+/* diamond */
+.diamond {
+    background-color: #e9e9e9;
+    padding: 65px 0;
+  }
+  .diamond .Heading {
+    text-align: center;
+  }
+  .diamond-list {
+    max-width: 998px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 220px;
+    gap: 30px;
+  }
+  .diamond-item {
+    background-color: #ffff;
+    box-shadow: 0px 30px 110px rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    padding: 12px;
+  }
+  .diamond-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+  .diamond-all {
+    margin: 70px 0 auto;
+    font-size: 24px;
+    padding: 9px 40px;
+    line-height: calc(36 / 24);
+  }
+  .diamond-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    height: 196px;
+  }
+  .diamond-content {
+    background: linear-gradient(
+      3.19deg,
+      rgba(0, 0, 0, 0.6) 17.99%,
+      rgba(0, 0, 0, 0) 55.56%
+    );
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-left: 30px;
+    padding-bottom: 14px;
+    color: white;
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .diamond-title,
+  .time {
+    position: absolute;
+  }
+  .diamond-title {
+    bottom: 52px;
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  .time {
+    bottom: 6px;
+    margin-bottom: 14px;
+    color: var(--gray-5);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
