@@ -1,20 +1,15 @@
-@import "reset";
-@import "general";
-@import "Top-tour";
-@import "popular";
-@import "gem";
-@import "diamond";
-@import "footer";
-@import "responsive";
-.container h1 {
-  margin-right: -10px;
-}
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+@import "./abstracts/variable";
+@import "./abstracts/mixins";
+
+@import "./base/reset";
+@import "./base/general";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./page/home";
+
+
 /* button */
 .button {
   display: flex;
