@@ -9,3 +9,31 @@ $flex-wrap: nowrap){
     flex-wrap: $flex-wrap;
     gap: $gap;
 }
+
+@mixin flexOptimized($options){
+    display: flex;
+    align-items: map-get($options, ai);
+    justify-content: map-get($options, jc);
+    flex-direction: map-get($options, fd );
+    flex-wrap: map-get($options, fw );
+    gap: map-get($options, gap);
+}
+
+@mixin minWidth($breakpoint: 0){
+    @if $breakpoint != 0{
+        @media screen and (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+@mixin maxWidth($breakpoint){
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+@mixin minMax($min, $max){
+    @media screen and (min-width: $min) and (max-width: $max){
+        @content;
+    }
+}
+
